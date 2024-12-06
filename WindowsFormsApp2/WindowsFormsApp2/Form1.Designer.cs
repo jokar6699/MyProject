@@ -40,33 +40,35 @@
             // 
             // textpassword
             // 
-            this.textpassword.Location = new System.Drawing.Point(34, 55);
+            this.textpassword.Location = new System.Drawing.Point(43, 49);
             this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
-            this.textpassword.Size = new System.Drawing.Size(177, 36);
+            this.textpassword.Size = new System.Drawing.Size(177, 39);
             this.textpassword.TabIndex = 0;
             this.textpassword.LocationChanged += new System.EventHandler(this.textBox1_LocationChanged);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(510, 58);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(539, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "نام کاربری";
+            this.label1.Text = ":نام کاربری";
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(228, 58);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(228, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 39);
             this.label2.TabIndex = 2;
-            this.label2.Text = "رمز عبور";
+            this.label2.Text = ":رمز عبور";
             // 
             // textname
             // 
-            this.textname.Location = new System.Drawing.Point(302, 55);
+            this.textname.Location = new System.Drawing.Point(356, 49);
             this.textname.Multiline = true;
             this.textname.Name = "textname";
             this.textname.Size = new System.Drawing.Size(177, 39);
@@ -75,7 +77,8 @@
             // 
             // vorod
             // 
-            this.vorod.Location = new System.Drawing.Point(346, 152);
+            this.vorod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vorod.Location = new System.Drawing.Point(375, 152);
             this.vorod.Name = "vorod";
             this.vorod.Size = new System.Drawing.Size(158, 47);
             this.vorod.TabIndex = 4;
@@ -85,7 +88,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(346, 222);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(375, 222);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(158, 47);
             this.button2.TabIndex = 5;
@@ -96,9 +100,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(403, 113);
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(425, 109);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(101, 20);
+            this.checkBox1.Size = new System.Drawing.Size(108, 22);
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "من ربات نیستم ";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -106,6 +111,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(135, 222);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(176, 47);
@@ -119,6 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(697, 308);
+            this.ControlBox = false;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
@@ -127,8 +134,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textpassword);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ورود ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

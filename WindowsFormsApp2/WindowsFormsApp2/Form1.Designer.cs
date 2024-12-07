@@ -40,6 +40,7 @@
             // 
             // textpassword
             // 
+            this.textpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpassword.Location = new System.Drawing.Point(43, 49);
             this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
@@ -68,6 +69,8 @@
             // 
             // textname
             // 
+            this.textname.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textname.Location = new System.Drawing.Point(356, 49);
             this.textname.Multiline = true;
             this.textname.Name = "textname";
@@ -137,6 +140,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "ورود ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

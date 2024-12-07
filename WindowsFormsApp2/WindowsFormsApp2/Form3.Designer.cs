@@ -33,7 +33,7 @@
             this.txtnumber = new System.Windows.Forms.TextBox();
             this.txtuname = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtrepassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,30 +47,35 @@
             // 
             // txtname
             // 
+            this.txtname.Font = new System.Drawing.Font("B Titr", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtname.Location = new System.Drawing.Point(429, 45);
             this.txtname.Multiline = true;
             this.txtname.Name = "txtname";
+            this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtname.Size = new System.Drawing.Size(208, 44);
             this.txtname.TabIndex = 0;
             // 
             // txtemail
             // 
+            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(44, 142);
             this.txtemail.Multiline = true;
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(208, 45);
+            this.txtemail.Size = new System.Drawing.Size(208, 44);
             this.txtemail.TabIndex = 1;
             // 
             // txtnumber
             // 
+            this.txtnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnumber.Location = new System.Drawing.Point(429, 142);
             this.txtnumber.Multiline = true;
             this.txtnumber.Name = "txtnumber";
-            this.txtnumber.Size = new System.Drawing.Size(208, 45);
+            this.txtnumber.Size = new System.Drawing.Size(208, 44);
             this.txtnumber.TabIndex = 2;
             // 
             // txtuname
             // 
+            this.txtuname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuname.Location = new System.Drawing.Point(44, 45);
             this.txtuname.Multiline = true;
             this.txtuname.Name = "txtuname";
@@ -79,19 +84,22 @@
             // 
             // txtpassword
             // 
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(429, 244);
             this.txtpassword.Multiline = true;
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(208, 48);
+            this.txtpassword.Size = new System.Drawing.Size(208, 44);
             this.txtpassword.TabIndex = 4;
             // 
-            // textBox6
+            // txtrepassword
             // 
-            this.textBox6.Location = new System.Drawing.Point(44, 244);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(208, 48);
-            this.textBox6.TabIndex = 5;
+            this.txtrepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrepassword.Location = new System.Drawing.Point(44, 244);
+            this.txtrepassword.Multiline = true;
+            this.txtrepassword.Name = "txtrepassword";
+            this.txtrepassword.Size = new System.Drawing.Size(208, 44);
+            this.txtrepassword.TabIndex = 5;
+            this.txtrepassword.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label1
             // 
@@ -137,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(270, 254);
+            this.label5.Location = new System.Drawing.Point(268, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 25);
             this.label5.TabIndex = 10;
@@ -163,6 +171,7 @@
             this.checkBox1.TabIndex = 12;
             this.checkBox1.Text = "من ربات نیستم";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button1
             // 
@@ -184,12 +193,14 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "انصراف";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 542);
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
@@ -199,14 +210,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtrepassword);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtuname);
             this.Controls.Add(this.txtnumber);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtname);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "ثبت نام";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,7 +231,7 @@
         private System.Windows.Forms.TextBox txtnumber;
         private System.Windows.Forms.TextBox txtuname;
         private System.Windows.Forms.TextBox txtpassword;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtrepassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

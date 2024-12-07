@@ -45,9 +45,30 @@ namespace WindowsFormsApp2
             {
                 if (checkBox1.Checked)
                 {
-                    Form2 form2 = new Form2();
-                    this.Hide();
-                    form2.ShowDialog();
+                    OleDbConnection con = new OleDbConnection();
+                    con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBace90.accdb";
+                    con.Open();
+                    OleDbCommand com = new OleDbCommand();
+                    com.CommandText = "SELECT COUNT(*) FROM [person] WHERE uname =? AND password=?";
+                    com.Parameters.AddWithValue("@uname",textname.Text);
+                    com.Parameters.AddWithValue("@password",textpassword.Text);
+                    com.Connection = con;
+                    int count = (int)com.ExecuteScalar();
+                    if (count == 1)
+                    {
+
+
+
+                        Form2 form2 = new Form2();
+                        this.Hide();
+                        form2.ShowDialog();
+                        con.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("نام کاربری یافت نشد");
+                    }
+                    
                 }
                 else
                 {

@@ -41,6 +41,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (textpassword.Text != "" && textname.Text != "")
             {
                 if (checkBox1.Checked)
@@ -49,9 +50,9 @@ namespace WindowsFormsApp2
                     con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBace90.accdb";
                     con.Open();
                     OleDbCommand com = new OleDbCommand();
-                    com.CommandText = "SELECT COUNT(*) FROM [person] WHERE uname =? AND password=?";
+                    com.CommandText = "SELECT COUNT(*) FROM [users] WHERE uname =? AND user_password=?";
                     com.Parameters.AddWithValue("@uname",textname.Text);
-                    com.Parameters.AddWithValue("@password",textpassword.Text);
+                    com.Parameters.AddWithValue("@user_password",textpassword.Text);
                     com.Connection = con;
                     int count = (int)com.ExecuteScalar();
                     if (count == 1)
@@ -63,6 +64,12 @@ namespace WindowsFormsApp2
                         this.Hide();
                         form2.ShowDialog();
                         con.Close();
+                    }
+                    else if (textname.Text == "admin" && textpassword.Text == "123456")
+                    {
+                        Form4 form4 = new Form4();
+                        this.Hide();
+                        form4.ShowDialog();
                     }
                     else
                     {
@@ -113,6 +120,11 @@ namespace WindowsFormsApp2
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

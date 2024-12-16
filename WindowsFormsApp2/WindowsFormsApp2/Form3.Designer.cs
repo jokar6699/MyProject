@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtname = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtpaye = new System.Windows.Forms.TextBox();
             this.txtnumber = new System.Windows.Forms.TextBox();
             this.txtuname = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
@@ -55,14 +55,14 @@
             this.txtname.Size = new System.Drawing.Size(208, 44);
             this.txtname.TabIndex = 0;
             // 
-            // txtemail
+            // txtpaye
             // 
-            this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(44, 142);
-            this.txtemail.Multiline = true;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(208, 44);
-            this.txtemail.TabIndex = 1;
+            this.txtpaye.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpaye.Location = new System.Drawing.Point(44, 142);
+            this.txtpaye.Multiline = true;
+            this.txtpaye.Name = "txtpaye";
+            this.txtpaye.Size = new System.Drawing.Size(208, 44);
+            this.txtpaye.TabIndex = 1;
             // 
             // txtnumber
             // 
@@ -117,9 +117,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(270, 153);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.Size = new System.Drawing.Size(118, 25);
             this.label2.TabIndex = 7;
-            this.label2.Text = ": ایمیل";
+            this.label2.Text = ": پایه تحصیلی";
             // 
             // label3
             // 
@@ -214,7 +214,7 @@
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtuname);
             this.Controls.Add(this.txtnumber);
-            this.Controls.Add(this.txtemail);
+            this.Controls.Add(this.txtpaye);
             this.Controls.Add(this.txtname);
             this.Name = "Form3";
             this.Text = "ثبت نام";
@@ -227,7 +227,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.TextBox txtpaye;
         private System.Windows.Forms.TextBox txtnumber;
         private System.Windows.Forms.TextBox txtuname;
         private System.Windows.Forms.TextBox txtpassword;

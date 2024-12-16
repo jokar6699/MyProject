@@ -25,7 +25,7 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (txtname.Text != "" && txtuname.Text != "" && txtnumber.Text != "" && txtemail.Text != "" && txtpassword.Text != "" && txtrepassword.Text != "") 
+            if (txtname.Text != "" && txtuname.Text != "" && txtnumber.Text != "" && txtpaye.Text != "" && txtpassword.Text != "" && txtrepassword.Text != "") 
             {
 
                 if (txtpassword.Text == txtrepassword.Text)
@@ -37,12 +37,12 @@ namespace WindowsFormsApp2
                         con.Open();
 
                         OleDbCommand com = new OleDbCommand();
-                        com.CommandText = "insert into [person]([name],[uname],[number],[email],[password]) values(?,?,?,?,?)";
+                        com.CommandText = "insert into [users]([name],[uname],[phone_number],[base0],[user_password]) values(?,?,?,?,?)";
                         com.Parameters.AddWithValue("@name", txtname.Text);
                         com.Parameters.AddWithValue("@uname", txtuname.Text);
-                        com.Parameters.AddWithValue("@number", txtnumber.Text);
-                        com.Parameters.AddWithValue("@email", txtemail.Text);
-                        com.Parameters.AddWithValue("@password", txtpassword.Text);
+                        com.Parameters.AddWithValue("@phone_number", txtnumber.Text);
+                        com.Parameters.AddWithValue("@base0", txtpaye.Text);
+                        com.Parameters.AddWithValue("@user_password", txtpassword.Text);
                         com.Connection = con;
                         com.ExecuteNonQuery();
                         con.Close();

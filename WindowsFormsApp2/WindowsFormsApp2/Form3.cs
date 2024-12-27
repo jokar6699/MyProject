@@ -19,7 +19,9 @@ namespace WindowsFormsApp2
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
+            txtpassword.PasswordChar = '*';
+            txtrepassword.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)

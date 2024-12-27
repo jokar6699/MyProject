@@ -41,13 +41,14 @@
             // 
             // textpassword
             // 
-            this.textpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpassword.Location = new System.Drawing.Point(46, 49);
             this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
             this.textpassword.Size = new System.Drawing.Size(177, 39);
             this.textpassword.TabIndex = 0;
             this.textpassword.LocationChanged += new System.EventHandler(this.textBox1_LocationChanged);
+            this.textpassword.TextChanged += new System.EventHandler(this.textpassword_TextChanged);
             // 
             // label1
             // 
@@ -154,7 +155,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.RightToLeftLayout = true;
-            this.Text = "ورود ";
+            this.Text = "ورود دانش آموز";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

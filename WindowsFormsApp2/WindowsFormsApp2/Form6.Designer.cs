@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.user_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.base0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saturday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sunday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.monday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tuesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wednesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +44,23 @@
             this.txtmonday = new System.Windows.Forms.TextBox();
             this.txtsaturday = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.base0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saturday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sunday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.monday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tuesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wednesday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.math = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.geography = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exercise = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ritual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.persian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.science = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.user_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,15 +72,21 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.name,
-            this.uname,
-            this.user_password,
-            this.phone_number,
             this.base0,
             this.saturday,
             this.sunday,
             this.monday,
             this.tuesday,
-            this.wednesday});
+            this.wednesday,
+            this.math,
+            this.geography,
+            this.exercise,
+            this.ritual,
+            this.persian,
+            this.science,
+            this.uname,
+            this.user_password,
+            this.phone_number});
             this.dataGridView1.Location = new System.Drawing.Point(3, 1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -84,86 +96,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1101, 250);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "id";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "name";
-            this.name.HeaderText = "نام و نام خانوادگی";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            // 
-            // uname
-            // 
-            this.uname.DataPropertyName = "uname";
-            this.uname.HeaderText = ".";
-            this.uname.MinimumWidth = 6;
-            this.uname.Name = "uname";
-            this.uname.Visible = false;
-            // 
-            // user_password
-            // 
-            this.user_password.DataPropertyName = "user_password";
-            this.user_password.HeaderText = "..";
-            this.user_password.MinimumWidth = 6;
-            this.user_password.Name = "user_password";
-            this.user_password.Visible = false;
-            // 
-            // phone_number
-            // 
-            this.phone_number.DataPropertyName = "phone_number";
-            this.phone_number.HeaderText = "...";
-            this.phone_number.MinimumWidth = 6;
-            this.phone_number.Name = "phone_number";
-            this.phone_number.Visible = false;
-            // 
-            // base0
-            // 
-            this.base0.DataPropertyName = "base0";
-            this.base0.HeaderText = "پایه";
-            this.base0.MinimumWidth = 6;
-            this.base0.Name = "base0";
-            // 
-            // saturday
-            // 
-            this.saturday.DataPropertyName = "saturday";
-            this.saturday.HeaderText = "شنبه";
-            this.saturday.MinimumWidth = 6;
-            this.saturday.Name = "saturday";
-            // 
-            // sunday
-            // 
-            this.sunday.DataPropertyName = "sunday";
-            this.sunday.HeaderText = "یکشنبه";
-            this.sunday.MinimumWidth = 6;
-            this.sunday.Name = "sunday";
-            // 
-            // monday
-            // 
-            this.monday.DataPropertyName = "monday";
-            this.monday.HeaderText = "دوشنبه";
-            this.monday.MinimumWidth = 6;
-            this.monday.Name = "monday";
-            // 
-            // tuesday
-            // 
-            this.tuesday.DataPropertyName = "tuesday";
-            this.tuesday.HeaderText = "سه شنبه";
-            this.tuesday.MinimumWidth = 6;
-            this.tuesday.Name = "tuesday";
-            // 
-            // wednesday
-            // 
-            this.wednesday.DataPropertyName = "wednesday";
-            this.wednesday.HeaderText = "چهارشنبه";
-            this.wednesday.MinimumWidth = 6;
-            this.wednesday.Name = "wednesday";
             // 
             // button1
             // 
@@ -317,6 +249,134 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "id";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "نام و نام خانوادگی";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            // 
+            // base0
+            // 
+            this.base0.DataPropertyName = "base0";
+            this.base0.HeaderText = "پایه";
+            this.base0.MinimumWidth = 6;
+            this.base0.Name = "base0";
+            // 
+            // saturday
+            // 
+            this.saturday.DataPropertyName = "saturday";
+            this.saturday.HeaderText = "شنبه";
+            this.saturday.MinimumWidth = 6;
+            this.saturday.Name = "saturday";
+            // 
+            // sunday
+            // 
+            this.sunday.DataPropertyName = "sunday";
+            this.sunday.HeaderText = "یکشنبه";
+            this.sunday.MinimumWidth = 6;
+            this.sunday.Name = "sunday";
+            // 
+            // monday
+            // 
+            this.monday.DataPropertyName = "monday";
+            this.monday.HeaderText = "دوشنبه";
+            this.monday.MinimumWidth = 6;
+            this.monday.Name = "monday";
+            // 
+            // tuesday
+            // 
+            this.tuesday.DataPropertyName = "tuesday";
+            this.tuesday.HeaderText = "سه شنبه";
+            this.tuesday.MinimumWidth = 6;
+            this.tuesday.Name = "tuesday";
+            // 
+            // wednesday
+            // 
+            this.wednesday.DataPropertyName = "wednesday";
+            this.wednesday.HeaderText = "چهارشنبه";
+            this.wednesday.MinimumWidth = 6;
+            this.wednesday.Name = "wednesday";
+            // 
+            // math
+            // 
+            this.math.DataPropertyName = "math";
+            this.math.HeaderText = "..";
+            this.math.MinimumWidth = 6;
+            this.math.Name = "math";
+            this.math.Visible = false;
+            // 
+            // geography
+            // 
+            this.geography.DataPropertyName = "geography";
+            this.geography.HeaderText = "....";
+            this.geography.MinimumWidth = 6;
+            this.geography.Name = "geography";
+            this.geography.Visible = false;
+            // 
+            // exercise
+            // 
+            this.exercise.DataPropertyName = "exercise";
+            this.exercise.HeaderText = ".......";
+            this.exercise.MinimumWidth = 6;
+            this.exercise.Name = "exercise";
+            this.exercise.Visible = false;
+            // 
+            // ritual
+            // 
+            this.ritual.DataPropertyName = "ritual";
+            this.ritual.HeaderText = ".....";
+            this.ritual.MinimumWidth = 6;
+            this.ritual.Name = "ritual";
+            this.ritual.Visible = false;
+            // 
+            // persian
+            // 
+            this.persian.DataPropertyName = "persian";
+            this.persian.HeaderText = "......";
+            this.persian.MinimumWidth = 6;
+            this.persian.Name = "persian";
+            this.persian.Visible = false;
+            // 
+            // science
+            // 
+            this.science.DataPropertyName = "science";
+            this.science.HeaderText = ".......";
+            this.science.MinimumWidth = 6;
+            this.science.Name = "science";
+            this.science.Visible = false;
+            // 
+            // uname
+            // 
+            this.uname.DataPropertyName = "uname";
+            this.uname.HeaderText = ".";
+            this.uname.MinimumWidth = 6;
+            this.uname.Name = "uname";
+            this.uname.Visible = false;
+            // 
+            // user_password
+            // 
+            this.user_password.DataPropertyName = "user_password";
+            this.user_password.HeaderText = "..";
+            this.user_password.MinimumWidth = 6;
+            this.user_password.Name = "user_password";
+            this.user_password.Visible = false;
+            // 
+            // phone_number
+            // 
+            this.phone_number.DataPropertyName = "phone_number";
+            this.phone_number.HeaderText = "...";
+            this.phone_number.MinimumWidth = 6;
+            this.phone_number.Name = "phone_number";
+            this.phone_number.Visible = false;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -352,17 +412,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn user_password;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn base0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn saturday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sunday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn monday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tuesday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wednesday;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -377,5 +426,22 @@
         private System.Windows.Forms.TextBox txtmonday;
         private System.Windows.Forms.TextBox txtsaturday;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn base0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn saturday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sunday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn monday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tuesday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wednesday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn math;
+        private System.Windows.Forms.DataGridViewTextBoxColumn geography;
+        private System.Windows.Forms.DataGridViewTextBoxColumn exercise;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ritual;
+        private System.Windows.Forms.DataGridViewTextBoxColumn persian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn science;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn user_password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number;
     }
 }

@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using School;
 
 namespace WindowsFormsApp2
 {
@@ -57,7 +59,10 @@ namespace WindowsFormsApp2
                     int count = (int)com.ExecuteScalar();
                     if (count == 1)
                     {
-
+                        School.Properties.Settings.Default.logined = true;
+                        School.Properties.Settings.Default.Save();
+                        School.Properties.Settings.Default.userlog = textname.Text;
+                        School.Properties.Settings.Default.Save();
 
 
                         Form2 form2 = new Form2();
@@ -122,9 +127,17 @@ namespace WindowsFormsApp2
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            MaximizeBox = false;
+            textpassword.PasswordChar = '*';
+            textname.Focus();
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textpassword_TextChanged(object sender, EventArgs e)
         {
 
         }

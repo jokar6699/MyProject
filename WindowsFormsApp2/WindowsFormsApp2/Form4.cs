@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-
+using School;
 namespace WindowsFormsApp2
 {
     public partial class Form4 : Form
@@ -105,6 +105,12 @@ namespace WindowsFormsApp2
             Form6 form6 = new Form6();
             this.Hide();
             form6.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form8 form8 = new Form8();  
+            this.Hide(); form8.ShowDialog();    
         }
     }
 }

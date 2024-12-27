@@ -47,7 +47,7 @@
             // 
             // txtname
             // 
-            this.txtname.Font = new System.Drawing.Font("B Titr", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtname.Location = new System.Drawing.Point(429, 45);
             this.txtname.Multiline = true;
             this.txtname.Name = "txtname";
@@ -84,7 +84,7 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.Location = new System.Drawing.Point(429, 244);
             this.txtpassword.Multiline = true;
             this.txtpassword.Name = "txtpassword";
@@ -93,7 +93,7 @@
             // 
             // txtrepassword
             // 
-            this.txtrepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrepassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrepassword.Location = new System.Drawing.Point(44, 244);
             this.txtrepassword.Multiline = true;
             this.txtrepassword.Name = "txtrepassword";
@@ -217,7 +217,7 @@
             this.Controls.Add(this.txtpaye);
             this.Controls.Add(this.txtname);
             this.Name = "Form3";
-            this.Text = "ثبت نام";
+            this.Text = "ثبت نام دانش آموز";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

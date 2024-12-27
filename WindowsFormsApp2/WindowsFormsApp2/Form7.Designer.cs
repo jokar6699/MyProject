@@ -88,6 +88,7 @@
             this.Controls.Add(this.txtid);
             this.Name = "Form7";
             this.Text = "حذف دانش آموز";
+            this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

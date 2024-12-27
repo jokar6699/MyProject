@@ -95,7 +95,7 @@ namespace School
                     string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source= DataBace90.accdb;";
                     using (OleDbConnection connection = new OleDbConnection(connectionString))
                     {
-                        string query = "UPDATE users SET [math] = @math,[science] = @science,[persian] = @persian,[ritual] = @ritual,[exercise] = exercise ,[geography] = @geography WHERE ID = @ID";
+                        string query = "UPDATE users SET [math] = @math,[science] = @science,[persian] = @persian,[ritual] = @ritual,[exercise] = @exercise ,[geography] = @geography WHERE ID = @ID";
 
                         using (OleDbCommand com = new OleDbCommand(query, con))
                         {

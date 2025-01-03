@@ -17,3 +17,47 @@ C:\Users\lenovo\Desktop\MyProject-main\WindowsFormsApp2\WindowsFormsApp2\obj\Deb
 C:\Users\lenovo\Desktop\MyProject-main\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Form8.resources
 C:\Users\lenovo\Desktop\MyProject-main\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Form9.resources
 C:\Users\lenovo\Desktop\MyProject-main\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Form10.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.exe.config
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.exe
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.pdb
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Login.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Scores.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.User_Profile.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Sign_Up.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form4.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Add_User.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Presence_Absence.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form7.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Score_Registration.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Attendance_Status.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Properties.Resources.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.exe
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.pdb
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.info.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Welcome.resources
+C:\Users\lenovo\Desktop\project of c#\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.edit.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.exe.config
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.exe
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\School.pdb
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.AssemblyReference.cache
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.edit.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.info.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Login.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Scores.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.User_Profile.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Sign_Up.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form4.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Add_User.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Presence_Absence.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form7.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Score_Registration.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Attendance_Status.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Properties.Resources.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.Welcome.resources
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.GenerateResource.cache
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School_Managment.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.exe
+C:\Users\lenovo\Documents\GitHub\MyProject\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\School.pdb

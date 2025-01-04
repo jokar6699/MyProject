@@ -26,14 +26,7 @@ namespace WindowsFormsApp2
         DataTable dt;
         private void button1_Click(object sender, EventArgs e)
         {
-            con = new OleDbConnection("provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb");
-            adapter = new OleDbDataAdapter("SELECT * FROM users", con);
-
-            dt = new DataTable();
-            adapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = true;
-            dataGridView1.AllowUserToDeleteRows = true;
+            
         }
         int selected_index;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -124,6 +117,14 @@ namespace WindowsFormsApp2
         private void Form6_Load(object sender, EventArgs e)
         {
             LoadData();
+            con = new OleDbConnection("provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb");
+            adapter = new OleDbDataAdapter("SELECT * FROM users", con);
+
+            dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = true;
+            dataGridView1.AllowUserToDeleteRows = true;
         }
 
         private void LoadData()

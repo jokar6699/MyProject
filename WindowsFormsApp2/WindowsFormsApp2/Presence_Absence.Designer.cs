@@ -46,7 +46,6 @@
             this.uname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -225,18 +224,6 @@
             this.phone_number.Name = "phone_number";
             this.phone_number.Visible = false;
             // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 70);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "نمایش/بروزرسانی اطلاعات";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -310,7 +297,7 @@
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(496, 507);
+            this.button2.Location = new System.Drawing.Point(381, 519);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 70);
             this.button2.TabIndex = 25;
@@ -372,7 +359,7 @@
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(336, 507);
+            this.button4.Location = new System.Drawing.Point(187, 519);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 70);
             this.button4.TabIndex = 32;
@@ -401,7 +388,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Presence_Absence";
             this.Text = "حضور و غیاب";
@@ -415,7 +401,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

@@ -38,6 +38,15 @@ namespace WindowsFormsApp2
         private void Form4_Load(object sender, EventArgs e)
         {
             dataGridView1.AutoGenerateColumns = false;
+             con = new OleDbConnection("provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb");
+            adapter = new OleDbDataAdapter("SELECT * FROM users", con);
+
+            dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = true;
+            dataGridView1.AllowUserToDeleteRows = true;
+
 
         }
 
@@ -95,10 +104,28 @@ namespace WindowsFormsApp2
         
         private void button4_Click(object sender, EventArgs e)
         {
-            //Form7 form7 = new Form7();
-            //this.Hide();
-            // form7.ShowDialog();
-          
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+
+
+                OleDbConnection con = new OleDbConnection();
+                con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=Database90.accdb";
+                con.Open();
+                OleDbCommand com = new OleDbCommand();
+                com.CommandText = "delete from [users] where [ID]=?";
+
+                com.Parameters.AddWithValue("@ID", dataGridView1.CurrentRow.Cells["ID"].Value);
+
+                com.Connection = con;
+                com.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("دانش آموز انتخابی با موفقیت حذف شد");
+              
+            }
+            else
+            {
+                MessageBox.Show("لطفا یک سطر را انتخاب کنید");
+            }
 
         }
 
@@ -113,6 +140,13 @@ namespace WindowsFormsApp2
         {
             Score_Registration form8 = new Score_Registration();  
             this.Hide(); form8.ShowDialog();    
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();  
+            this.Hide();
+            login.ShowDialog();    
         }
     }
 }

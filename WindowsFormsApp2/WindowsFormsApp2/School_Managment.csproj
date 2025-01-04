@@ -118,12 +118,6 @@
     <Compile Include="Presence_Absence.Designer.cs">
       <DependentUpon>Presence_Absence.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
-    </Compile>
     <Compile Include="Score_Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +165,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presence_Absence.resx">
       <DependentUpon>Presence_Absence.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Score_Registration.resx">
       <DependentUpon>Score_Registration.cs</DependentUpon>

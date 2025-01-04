@@ -51,6 +51,14 @@ namespace School
 
         private void Form8_Load(object sender, EventArgs e)
         {
+            con = new OleDbConnection("provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb");
+            adapter = new OleDbDataAdapter("SELECT * FROM users", con);
+
+            dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.AllowUserToAddRows = true;
+            dataGridView1.AllowUserToDeleteRows = true;
 
         }
 

@@ -26,50 +26,83 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (txtname.Text != "" && txtuname.Text != "" && txtnumber.Text != "" && txtpaye.Text != "" && txtpassword.Text != "" && txtrepassword.Text != "") 
+            if (txtname.Text == "")
             {
+                MessageBox.Show("لطفا نام خود را وارد نمایید");
+            }
+            else if (txtuname.Text == "")
+            {
+                MessageBox.Show("لطفا نام کاربری خود را وارد نمایید");
 
-                if (txtpassword.Text == txtrepassword.Text)
-                {
-                    if (checkBox1.Checked)
-                    {
-                        OleDbConnection con = new OleDbConnection();
-                        con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb";
-                        con.Open();
+            }
+            else if (txtpaye.Text == "")
+            {
+                MessageBox.Show("لطفا پایه تحصیلی خود را وارد نمایید");
 
-                        OleDbCommand com = new OleDbCommand();
-                        com.CommandText = "insert into [users]([name],[uname],[phone_number],[base0],[user_password]) values(?,?,?,?,?)";
-                        com.Parameters.AddWithValue("@name", txtname.Text);
-                        com.Parameters.AddWithValue("@uname", txtuname.Text);
-                        com.Parameters.AddWithValue("@phone_number", txtnumber.Text);
-                        com.Parameters.AddWithValue("@base0", txtpaye.Text);
-                        com.Parameters.AddWithValue("@user_password", txtpassword.Text);
-                        com.Connection = con;
-                        com.ExecuteNonQuery();
-                        con.Close();
-                        MessageBox.Show("ثبت نام با موفقیت انجام شد");
+            }
+            else if (txtnumber.Text == "")
+            {
+                MessageBox.Show("لطفا شماره تماس خود را وارد کنید");
 
-
-                        Login form1 = new Login();
-                        this.Hide();
-                        form1.ShowDialog();
-                    }
-                    else
-                    {
-                        MessageBox.Show("در چک باکس تایید کنید ربات نیستید");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("رمز عبور با هم مطابقت ندارد");
-                }
+            }
+            else if (txtpassword.Text == "")
+            {
+                MessageBox.Show("لطفا رمز عبور خود را وارد کنید");
+            }
+            else if (txtrepassword.Text == "")
+            {
+                MessageBox.Show("لطفا رمز عبور خود را تکرار کنید");
+            }
+            else if (!checkBox1.Checked)
+            {
+                MessageBox.Show("در چک باکس تایید کنید که ربات نیستید");
+            }
+            else if (txtrepassword.Text != txtpassword.Text)
+            {
+                MessageBox.Show("رمز های عبور باهم مطابقت ندارند");
             }
             else
             {
-                MessageBox.Show("لطفا اطلاعات را به درستی تکمیل کنید");
-            }
+                OleDbConnection con = new OleDbConnection();
+                con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
+                con.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandText = "SELECT COUNT(*) FROM [users] WHERE [uname]=?";
+                cmd.Connection = con;
+                cmd.Parameters.AddWithValue("@uname", txtuname.Text);
+                int count = (int)cmd.ExecuteScalar();
+                if (count == 1)
+                {
+                    con.Close();
 
+                    MessageBox.Show("نام کاربری در حال حاضر وجود دارد");
+
+                }
+                else
+                {
+                    con.Close();
+                    OleDbConnection conn = new OleDbConnection();
+                    conn.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb";
+                    conn.Open();
+
+                    OleDbCommand com = new OleDbCommand();
+                    com.CommandText = "insert into [users]([name],[uname],[phone_number],[base0],[user_password]) values(?,?,?,?,?)";
+                    com.Parameters.AddWithValue("@name", txtname.Text);
+                    com.Parameters.AddWithValue("@uname", txtuname.Text);
+                    com.Parameters.AddWithValue("@phone_number", txtnumber.Text);
+                    com.Parameters.AddWithValue("@base0", txtpaye.Text);
+                    com.Parameters.AddWithValue("@user_password", txtpassword.Text);
+                    com.Connection = conn;
+                    com.ExecuteNonQuery();
+                    conn.Close();
+                    MessageBox.Show("ثبت نام با موفقیت انجام شد");
+
+
+                    Login form1 = new Login();
+                    this.Hide();
+                    form1.ShowDialog();
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

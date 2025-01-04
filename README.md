@@ -4,10 +4,10 @@ designed to manage student information,
 attendance, grades , etc.
 
 # Features
-**Management of students information** 
-**Registration of attendance**
-**Score management**
-**The possibility of login and management
+- **Management of students information** 
+- **Registration of attendance**
+- **Score management**
+- **The possibility of login and management
 by the system administrator**
 
 # Prerequisites

@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
             {
                 OleDbCommandBuilder commandBuilder = new OleDbCommandBuilder(adapter);
                 adapter.Update(dt);
-                MessageBox.Show("با موفقیت بروزرسانی شد");
+                MessageBox.Show("گزینه انتخابی با موفقیت ویرایش شد");
             }
             else
             {

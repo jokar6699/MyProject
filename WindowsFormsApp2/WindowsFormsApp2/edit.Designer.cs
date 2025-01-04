@@ -157,6 +157,7 @@
             this.textBox4.Location = new System.Drawing.Point(149, 216);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox4.Size = new System.Drawing.Size(190, 35);
             this.textBox4.TabIndex = 15;
             // 
@@ -165,6 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 568);
+            this.ControlBox = false;
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.vorod);

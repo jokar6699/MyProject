@@ -61,6 +61,7 @@
             this.txtpaye.Location = new System.Drawing.Point(44, 142);
             this.txtpaye.Multiline = true;
             this.txtpaye.Name = "txtpaye";
+            this.txtpaye.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtpaye.Size = new System.Drawing.Size(208, 44);
             this.txtpaye.TabIndex = 1;
             // 

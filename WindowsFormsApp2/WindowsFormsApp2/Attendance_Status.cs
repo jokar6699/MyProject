@@ -27,14 +27,14 @@ namespace School
 
         private void Form9_Load(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection();
-            con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
+            OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه داده
+            con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb"; // مسیر پایگاه داده
             con.Open();
-            OleDbCommand com = new OleDbCommand();
-            com.CommandText = "SELECT * FROM [users] WHERE [uname]=?";
+            OleDbCommand com = new OleDbCommand(); // ارتباط با جدول 
+            com.CommandText = "SELECT * FROM [users] WHERE [uname]=?"; // دستورالعمل اجرایی
             com.Parameters.AddWithValue("@uname", School.Properties.Settings.Default.userlog);
             com.Connection = con;
-            OleDbDataReader reader = com.ExecuteReader();
+            OleDbDataReader reader = com.ExecuteReader(); // خواندن اطللاعات از پایگاه داده
             if (reader.Read())
             {
                 lbshande.Text = reader["saturday"].ToString();

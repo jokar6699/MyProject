@@ -33,7 +33,7 @@ namespace School
                 try
                 {
                     DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-
+                    // افزودن اطلاعات به جدول گرید ویو
                     txtmath.Text = selectedRow.Cells[11].Value?.ToString() ?? "";
                     txtscience.Text = selectedRow.Cells[12].Value?.ToString() ?? "";
                     txtpersian.Text = selectedRow.Cells[13].Value?.ToString() ?? "";
@@ -69,14 +69,7 @@ namespace School
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con = new OleDbConnection("provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb");
-            adapter = new OleDbDataAdapter("SELECT * FROM users", con);
-
-            dt = new DataTable();
-            adapter.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.AllowUserToAddRows = true;
-            dataGridView1.AllowUserToDeleteRows = true;
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -93,6 +86,7 @@ namespace School
             {
                 try
                 {
+                    // ترتیب نمایش اطلاعات در جدول گرید ویو
                     dataGridView1.CurrentRow.Cells[11].Value = txtmath.Text;
                     dataGridView1.CurrentRow.Cells[12].Value = txtscience.Text;
                     dataGridView1.CurrentRow.Cells[13].Value = txtpersian.Text;

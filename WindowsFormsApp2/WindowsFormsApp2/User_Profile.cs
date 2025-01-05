@@ -29,17 +29,17 @@ namespace School
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            OleDbConnection con = new OleDbConnection();
-            con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
+            OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه داده
+            con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb"; // مسیر پایگاه داده
             con.Open();
-            OleDbCommand com = new OleDbCommand();
-            com.CommandText = "SELECT * FROM [users] WHERE [uname]=?";
+            OleDbCommand com = new OleDbCommand(); // ارتباط با جدول پایگاه داده
+            com.CommandText = "SELECT * FROM [users] WHERE [uname]=?"; // دستور
             com.Parameters.AddWithValue("@uname", School.Properties.Settings.Default.userlog);
             com.Connection = con;
-            OleDbDataReader reader = com.ExecuteReader();
-            if (reader.Read())
+            OleDbDataReader reader = com.ExecuteReader(); // خواندن اطلاعات از پایگاه داده
+            if (reader.Read()) // در صورت خواندن اطلاعات
             {
-                //اطلاعات شخصی
+                // نمایش اطلاعات در لیبل ها
                 lbname.Text = reader["name"].ToString();
                 lbpaye.Text = reader["base0"].ToString();
                 lbphone.Text = reader["phone_number"].ToString();
@@ -47,7 +47,7 @@ namespace School
        
 
             }
-            else
+            else // در غیر این صورت
             {
                 MessageBox.Show("خطای نامشخص");
             }
@@ -81,13 +81,14 @@ namespace School
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("هشدار:اطلاعات قابل بازیابی نخواهند بود", "آیا مطمین هستید؟؟؟", MessageBoxButtons.YesNo);
+            // حذف حساب کاریری
+            var result = MessageBox.Show("هشدار:اطلاعات قابل بازیابی نخواهند بود", "آیا مطمین هستید؟؟؟", MessageBoxButtons.YesNo); // پیغام اطمینان از حذف حساب 
             if (result == DialogResult.Yes)
             {
-                OleDbConnection con = new OleDbConnection();
+                OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه داده
                 con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
                 con.Open();
-                OleDbCommand com = new OleDbCommand();
+                OleDbCommand com = new OleDbCommand(); // ارتباط با جدول پایگاه داده
                 com.CommandText = "delete from [users] where [uname]=?";
                 string username = School.Properties.Settings.Default.userlog.ToString();
                 com.Parameters.AddWithValue("@uname", username);

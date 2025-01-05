@@ -44,20 +44,20 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (textpassword.Text != "" && textname.Text != "")
+            if (textpassword.Text != "" && textname.Text != "") // اگر مقادیر خالی نبود
             {
-                if (checkBox1.Checked)
+                if (checkBox1.Checked) // چک باکس تایید شده بود
                 {
-                    OleDbConnection con = new OleDbConnection();
-                    con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb";
+                    OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه داده
+                    con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb"; // مسیر پایگاه داده
                     con.Open();
-                    OleDbCommand com = new OleDbCommand();
+                    OleDbCommand com = new OleDbCommand(); // رتباط با جدول پایگاه داده
                     com.CommandText = "SELECT COUNT(*) FROM [users] WHERE uname =? AND user_password=?";
                     com.Parameters.AddWithValue("@uname",textname.Text);
                     com.Parameters.AddWithValue("@user_password",textpassword.Text);
                     com.Connection = con;
                     int count = (int)com.ExecuteScalar();
-                    if (count == 1)
+                    if (count == 1) // اگر اطلاعات در پایگاه داده موجود بود
                     {
                         School.Properties.Settings.Default.logined = true;
                         School.Properties.Settings.Default.Save();
@@ -128,7 +128,7 @@ namespace WindowsFormsApp2
         {
 
             MaximizeBox = false;
-            textpassword.PasswordChar = '*';
+            textpassword.PasswordChar = '*'; // مخفی کردن پسورد
             textname.Focus();
         }
 

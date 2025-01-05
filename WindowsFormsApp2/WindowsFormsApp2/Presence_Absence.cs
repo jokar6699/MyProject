@@ -66,13 +66,14 @@ namespace WindowsFormsApp2
             {
                 try
                 {
+                    // ترتیب نمایش اطلاعات در جدول گرید ویو با نشان دادن ایندکس
                     dataGridView1.CurrentRow.Cells[6].Value = txtsaturday.Text;
                     dataGridView1.CurrentRow.Cells[7].Value = txtsunday.Text;
                     dataGridView1.CurrentRow.Cells[8].Value = txtmonday.Text;
                     dataGridView1.CurrentRow.Cells[9].Value = txttuesday.Text;
                     dataGridView1.CurrentRow.Cells[10].Value = txtwednesday.Text;
 
-                    string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source= DataBase90.accdb;";
+                    string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source= DataBase90.accdb;"; // ارتباط
                     using (OleDbConnection connection = new OleDbConnection(connectionString))
                     {
                         string query = "UPDATE users SET [saturday] = @saturday,[sunday] = @sunday,[monday] = @monday,[tuesday] = @tuesday,[wednesday] = @wednesday WHERE ID = @ID";

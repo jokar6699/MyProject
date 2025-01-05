@@ -25,11 +25,11 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection();
-            con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb";
+            OleDbConnection con = new OleDbConnection(); //ارتباط با پایگاه داده
+            con.ConnectionString = "provider=Microsoft.ace.oledb.12.0;data source = DataBase90.accdb"; // آدرس پایگاه داده
             con.Open();
 
-            OleDbCommand com = new OleDbCommand();
+            OleDbCommand com = new OleDbCommand(); // ارتباط با جدول پایگاه داده
             com.CommandText = "insert into [users]([name],[uname],[phone_number],[base0],[user_password]) values(?,?,?,?,?)";
             com.Parameters.AddWithValue("@name", txtname.Text);
             com.Parameters.AddWithValue("@uname", txtuname.Text);
@@ -38,13 +38,13 @@ namespace WindowsFormsApp2
             com.Parameters.AddWithValue("@user_password", txtpassword.Text);
             com.Connection = con;
             com.ExecuteNonQuery();
-            con.Close();
+            con.Close(); // پایان ارتباط 
             MessageBox.Show("دانش آموز جدید با موفقیت ثبت شد");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Form4 form4 = new Form4(); 
             this.Hide();
             form4.ShowDialog();
         }

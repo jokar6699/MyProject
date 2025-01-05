@@ -22,17 +22,17 @@ namespace School
 
         private void edit_Load(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection();
+            OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه داده
             con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
             con.Open();
-            OleDbCommand com = new OleDbCommand();
+            OleDbCommand com = new OleDbCommand(); // ارتباط با جدول 
             com.CommandText = "SELECT * FROM [users] WHERE [uname]=?";
             com.Parameters.AddWithValue("@uname", School.Properties.Settings.Default.userlog);
             com.Connection = con;
-            OleDbDataReader reader = com.ExecuteReader();
+            OleDbDataReader reader = com.ExecuteReader(); // خواندن اطلاعات از پایگاه داده
             if (reader.Read())
             {
-                //اطلاعات شخصی
+                // نمایش اطلاعات در تکست باکس یا لیبل
                 label6.Text = reader["name"].ToString();
                 textBox4.Text = reader["base0"].ToString();
                 textBox2.Text = reader["phone_number"].ToString();
@@ -51,12 +51,13 @@ namespace School
         private void vorod_Click(object sender, EventArgs e)
         {
             string username = School.Properties.Settings.Default.userlog;
-            OleDbConnection con = new OleDbConnection();
+            OleDbConnection con = new OleDbConnection(); // ارتباط با پایگاه 
             con.ConnectionString = "Provider=Microsoft.ace.oledb.12.0;Data Source=DataBase90.accdb";
             con.Open();
-            OleDbCommand com = new OleDbCommand();
-            com.CommandText = "Update [users] set [uname]=?,[base0]=?, [phone_number]=? ,[user_password]=? WHERE [uname]=? ";
+            OleDbCommand com = new OleDbCommand(); // ارتباط با جدول
+            com.CommandText = "Update [users] set [uname]=?,[base0]=?, [phone_number]=? ,[user_password]=? WHERE [uname]=? "; // بروزرسانی
             com.Connection = con;
+            // اجرا در ستون های انتخابی جدول پایگاه داده
             com.Parameters.AddWithValue("@uname", textBox1.Text);
             com.Parameters.AddWithValue("@base0", textBox4.Text);
             com.Parameters.AddWithValue("@phone_number", textBox2.Text);
